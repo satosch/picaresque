@@ -1,12 +1,15 @@
 <div class="header"><h3>picaresque</h3></div>
-<p-accordion [activeIndex]="index">
-  <p-accordionTab header="current/upcoming" (mouseover)="index = 0" (mouseleave)="index = null;" [(selected)]="activeState[0]">
-    <article >17 DEC 2022 | Michel Gomm Jannis Löhrer</article>
+<p-accordion [activeIndex]="index" (mouseleave)="index=null">
+  <p-accordionTab header="current/upcoming" (mouseover)="index = 0"  [(selected)]="activeState[0]">
+    <article>
+      Jannis Löhrer | Michel Gomm <br>
+      <span style="font-size: 0.75rem; opacity:0.9;">Opening on 17 DEC 2022<br>after opening only with appointment</span>
+    </article>
   </p-accordionTab>
-  <p-accordionTab header="location" (mouseover)="index = 1" (mouseleave)="index = null;" [(selected)]="activeState[1]">
+  <p-accordionTab header="location" (mouseover)="index = 1"  [(selected)]="activeState[1]">
     <article >Höherweg 41 Düsseldorf</article>
   </p-accordionTab>
-  <p-accordionTab header="mail" (mouseover)="index = 2" (mouseleave)="index = null;" [(selected)]="activeState[2]">
+  <p-accordionTab header="mail" (mouseover)="index = 2" [(selected)]="activeState[2]">
     <article > info(at)picaresque.de
     </article>
   </p-accordionTab>
