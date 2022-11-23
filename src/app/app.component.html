@@ -1,15 +1,12 @@
-<div class="header"><h3>picaresque</h3></div>
-<p-accordion [activeIndex]="index" (mouseleave)="index=null">
-  <p-accordionTab header="current/upcoming" (mouseover)="index = 0"  [(selected)]="activeState[0]">
-    <article>
-      Jannis Löhrer | Michel Gomm <br>
-      <span style="font-size: 0.75rem; opacity:0.9;">Opening on 17 DEC 2022<br>after opening only with appointment</span>
-    </article>
+<div class="header"><h3> <i class="pi pi-box"></i> picaresque</h3><br></div>
+<p-accordion expandIcon="" collapseIcon="" [activeIndex]="index">
+  <p-accordionTab header="current/upcoming" (mouseover)="index = 0" (mouseleave)="index = 6" [(selected)]="activeState[0]">
+  <app-current></app-current>
   </p-accordionTab>
-  <p-accordionTab header="location" (mouseover)="index = 1"  [(selected)]="activeState[1]">
-    <article >Höherweg 41 Düsseldorf</article>
+  <p-accordionTab header="location" (mouseover)="index = 1" (mouseleave)="index = 6"  [(selected)]="activeState[1]">
+    <article >Höherweg 41 40233 Düsseldorf</article>
   </p-accordionTab>
-  <p-accordionTab header="mail" (mouseover)="index = 2" [(selected)]="activeState[2]">
+  <p-accordionTab header="mail" (mouseover)="index = 2" (mouseleave)="index = 6" [(selected)]="activeState[2]">
     <article > info(at)picaresque.de
     </article>
   </p-accordionTab>

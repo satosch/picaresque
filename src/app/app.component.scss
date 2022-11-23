@@ -1,12 +1,17 @@
   div.header{
+    display: inline-block;
     color: rgb(74, 74, 74);
     &:hover{
       color:pink
+  }
+  .pi-box{
+    vertical-align: middle;
   }
 }
 
   p-accordion {
     color: rgb(74, 74, 74);
+    width: 10rem;
   }
 
   p-accordiontab {

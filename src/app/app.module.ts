@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { ButtonModule } from 'primeng/button';
 import { AccordionModule } from 'primeng/accordion';
 import { ToastModule } from 'primeng/toast';
+import { CurrentComponent } from './current/current.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CurrentComponent,
   ],
   imports: [
     BrowserModule,

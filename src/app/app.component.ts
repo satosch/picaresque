@@ -11,7 +11,4 @@ export class AppComponent {
   public activeState: boolean[] = [false, false, false];
 
 
-  public onMouseLeave():void {
-    this.index = null
-  }
 }
