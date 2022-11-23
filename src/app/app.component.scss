@@ -1,0 +1,27 @@
+  div.header{
+    color: rgb(74, 74, 74);
+    &:hover{
+      color:pink
+  }
+}
+
+  p-accordion {
+    color: rgb(74, 74, 74);
+  }
+
+  p-accordiontab {
+    margin-bottom: 0.005rem;
+    .impressum{
+      font-size: 0.5rem;
+    }
+  }
+
+  article {
+    padding: 0.2rem;
+    color: pink;
+    font-size: 1rem;
+  }
+
+  .footer {
+    font-size:0.5rem;
+  }

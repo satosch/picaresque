@@ -1,1 +1,23 @@
-picaresque site
+<div class="header"><h3>picaresque</h3></div>
+<p-accordion [activeIndex]="index">
+  <p-accordionTab header="current/upcoming" (mouseover)="index = 0" (mouseleave)="index = null;" [(selected)]="activeState[0]">
+    <article >17 DEC 2022 | Michel Gomm Jannis Löhrer</article>
+  </p-accordionTab>
+  <p-accordionTab header="location" (mouseover)="index = 1" (mouseleave)="index = null;" [(selected)]="activeState[1]">
+    <article >Höherweg 41 Düsseldorf</article>
+  </p-accordionTab>
+  <p-accordionTab header="mail" (mouseover)="index = 2" (mouseleave)="index = null;" [(selected)]="activeState[2]">
+    <article > info(at)picaresque.de
+    </article>
+  </p-accordionTab>
+  <p-accordionTab header="impressum">
+    <article class='impressum'><p>Angaben gemäß § 5 TMG</p><p>Satoshi Nakase<br>
+      Höherweg 41<br>
+      40233 Düsseldorf <br>
+      </p><p><strong>Kontakt:</strong> <br>
+      E-Mail:info(at)picaresque.de</p>
+      </article>
+    </p-accordionTab>
+
+</p-accordion>
+<div class="footer"><p style="font-size: 10px;"></p></div>

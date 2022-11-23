@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'picaresque';
+  public title = 'picaresque';
+  public index: number|null = null;
+  public activeState: boolean[] = [false, false, false];
+
+
+  public onMouseLeave():void {
+    this.index = null
+  }
 }
