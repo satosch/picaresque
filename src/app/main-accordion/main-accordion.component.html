@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre">
+<p-accordion expandIcon="" collapseIcon="" [activeIndex]="index">
+  <p-accordionTab class="tab" header="current/upcoming" (mouseover)="index = 0" (mouseleave)="index = 0" [(selected)]="activeState[0]">
+  <app-current></app-current>
+  </p-accordionTab>
+  <p-accordionTab class="tab" header="about"  [(selected)]="activeState[3]">
+    <article style="text-align: right;">
+      <span>Projektleiter: Maya.K | Michel Gomm<br><span style="height:5px; font-size: xx-small; color:transparent;">(^ε^)-☆Chu!!　Satoshi Nakase</span></span>
+    </article>
+  </p-accordionTab>
+  <p-accordionTab class="tab" header="location"  [(selected)]="activeState[1]">
+  <app-location></app-location>
+  </p-accordionTab>
+  <p-accordionTab class="tab" header="contact"  [(selected)]="activeState[2]">
+    <article style="text-align: right;" >
+      <span id="contactData"> info(at)picaresque.de
+        <br> + 49 (O)211 5692 4289
+      </span>
+    </article>
+  </p-accordionTab>
+
+  <p-accordionTab class="tab" header="impressum">
+    <article class='impressum' style="text-align: right;">Angaben gemäß § 5 TMG<p>Satoshi Nakase<br>
+      Höherweg 41<br>
+      40233 Düsseldorf <br>
+      </p><p><strong>Kontakt:</strong> <br>
+        <span>
+      E-Mail:info(at)picaresque.de<br>
+    </span></p>
+    </article>
+    </p-accordionTab>
+</p-accordion>

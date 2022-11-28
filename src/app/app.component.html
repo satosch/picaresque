@@ -1,23 +1,15 @@
-<div class="header"><h3> <i class="pi pi-box"></i> picaresque</h3><br></div>
-<p-accordion expandIcon="" collapseIcon="" [activeIndex]="index">
-  <p-accordionTab header="current/upcoming" (mouseover)="index = 0" (mouseleave)="index = 6" [(selected)]="activeState[0]">
-  <app-current></app-current>
-  </p-accordionTab>
-  <p-accordionTab header="location" (mouseover)="index = 1" (mouseleave)="index = 6"  [(selected)]="activeState[1]">
-    <article >Höherweg 41 40233 Düsseldorf</article>
-  </p-accordionTab>
-  <p-accordionTab header="mail" (mouseover)="index = 2" (mouseleave)="index = 6" [(selected)]="activeState[2]">
-    <article > info(at)picaresque.de
-    </article>
-  </p-accordionTab>
-  <p-accordionTab header="impressum">
-    <article class='impressum'><p>Angaben gemäß § 5 TMG</p><p>Satoshi Nakase<br>
-      Höherweg 41<br>
-      40233 Düsseldorf <br>
-      </p><p><strong>Kontakt:</strong> <br>
-      E-Mail:info(at)picaresque.de</p>
-      </article>
-    </p-accordionTab>
+<div class="header" style="font-family: 'Ms Madi', serif;">
+  <h1>
+    picaresque
+  </h1>
+</div>
 
-</p-accordion>
-<div class="footer"><p style="font-size: 10px;"></p></div>
+<article>
+  <div class="side-wrapper"><p></p>
+  </div>
+  <div class = "main-wrapper">
+    <app-main-accordion></app-main-accordion>
+  </div>
+</article>
+
+<div class="footer"></div>

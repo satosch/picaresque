@@ -9,6 +9,4 @@ export class AppComponent {
   public title = 'picaresque';
   public index: number|null = null;
   public activeState: boolean[] = [false, false, false];
-
-
 }
